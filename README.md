@@ -27,7 +27,7 @@ The extractive QA component predicts an answer span directly from a given contex
   - F1 Score
 
 
-** 2. Passage Re-ranking**
+ **2. Passage Re-ranking**
 
 The re-ranking component improves retrieval quality by ranking candidate passages according to their relevance to a query.
 
@@ -54,17 +54,8 @@ The dataset was imported directly during runtime and was not stored locally in t
 - Scikit-learn
 
 
-** Project Structure**
 
-Modern-Information-Retrieval/
-│
-├── notebooks/
-│   └── project_notebook.ipynb
-│
-├── README.md
-├── requirements.txt
-└── results/
-Workflow
+**Workflow**
 Extractive QA Pipeline
 Load SQuAD dataset
 Preprocess contexts and questions
