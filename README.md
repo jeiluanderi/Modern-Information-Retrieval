@@ -84,7 +84,9 @@ Web interface integration
 Advanced reranking architectures
 
 **Author**
+
 Anderi Jeilu
 
 **License**
+
 This project is for educational and research purposes.
