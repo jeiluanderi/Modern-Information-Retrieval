@@ -1,23 +1,64 @@
- Extractive QA and Re-ranking System
+ Extractive Question Answering and Re-ranking System
 
-This project implements:
+ Overview
 
-- Extractive Question Answering
+This project implements an NLP pipeline for:
+
+- Extractive Question Answering (QA)
 - Passage Retrieval
-- Re-ranking
-- Evaluation using EM and F1
+- Re-ranking of retrieved passages
+- Evaluation using Exact Match (EM) and F1 Score
 
- Technologies
+The system retrieves relevant contexts for a user query, re-ranks the candidate passages, and extracts the most accurate answer using transformer-based models.
+
+
+
+ Features
+
+- Extractive QA using Transformer models
+- Passage retrieval and ranking
+- Re-ranking mechanism for improving answer relevance
+- Evaluation metrics:
+  - Exact Match (EM)
+  - F1 Score
+- Dataset preprocessing and tokenization
+- Hugging Face Transformers integration
+
+
+ Technologies Used
+
 - Python
-- HuggingFace Transformers
-- PyTorch
 - Google Colab
+- Hugging Face Transformers
+- PyTorch
+- NumPy
+- Pandas
+- Scikit-learn
+
+
 
  Dataset
-- SQuAD v1.1
 
-Features
-- Context retrieval
-- Answer extraction
-- Re-ranking pipeline
+This project uses the SQuAD v1.1 dataset.
 
+Files used:
+- `train-v1.1.json`
+- `dev-v1.1.json`
+
+
+
+Project Structure
+
+```text
+Modern-Information-Retrieval/
+│
+├── notebooks/
+│   └── squad_qa.ipynb
+│
+├── data/
+│   ├── train-v1.1.json
+│   └── dev-v1.1.json
+│
+├── README.md
+├── requirements.txt
+└── results/
