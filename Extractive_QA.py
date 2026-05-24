@@ -79,7 +79,6 @@ def get_answer(question, top_k_retrive=10, top_k_rerank=3):
     return best_answer
 
 # --- 6. Interactive User Interface ---
-# Creating widgets for interactive question answering
 input_text = widgets.Text(
     value='',
     placeholder='Ask anything from dataset...',
